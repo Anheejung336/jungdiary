@@ -16,6 +16,10 @@ export const getEmotionImgById =(emotionId) => {
     }
 }
 
+export const setPageTitle = (title) =>{
+    const titleEl = document.getElementsByTagName('title')[0];
+    titleEl.innerHTML=title;
+}
 export const getFormattedDate = (targetDate) => {
     let year = targetDate.getFullYear();
     let month = targetDate.getMonth() + 1;
